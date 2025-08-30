@@ -45,7 +45,7 @@
 
                 <div class="contact-wrapper">
                     <div class="contact-form">
-                        <form action="send_email.php" method="POST">
+                       <form id="contact-form">
                             <div class="form-group">
                                 <label for="name">Nombre</label>
                                 <input type="text" id="name" name="name" required>
@@ -136,5 +136,20 @@
     </a>
 
     <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+  emailjs.init("OtxRxWdmg4fiJ_M1h"); // Usa la clave pública que te proporciona EmailJS
+
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    emailjs.sendForm('service_6hnep6p', 'template_hw04hbe', this)
+      .then(function() {
+        alert('Correo enviado exitosamente!');
+      }, function(error) {
+        alert('Error al enviar el correo: ' + error.text);
+      });
+  });
+</script>
 </body>
 </html>
