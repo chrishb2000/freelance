@@ -7,18 +7,27 @@ document.addEventListener("DOMContentLoaded", () => {
     const declineBtn = document.getElementById("cookie-decline-btn");
     const languageButtons = document.querySelectorAll(".lang-btn");
     const pathSegments = window.location.pathname.split("/").filter(Boolean);
-    const isSpanishPath = pathSegments[0] === "es";
-    const currentPage = pathSegments[pathSegments.length - 1] || "index.html";
-    const normalizedPage = currentPage === "es" ? "index.html" : currentPage;
+    const lastSegment = pathSegments[pathSegments.length - 1] || "";
+    const currentPage = lastSegment.endsWith(".html") ? lastSegment : "index.html";
+    const spanishSegmentIndex = pathSegments.lastIndexOf("es");
+    const isSpanishPath = spanishSegmentIndex !== -1 && (
+        spanishSegmentIndex === pathSegments.length - 1 ||
+        spanishSegmentIndex === pathSegments.length - 2
+    );
+    const rootSegments = isSpanishPath
+        ? pathSegments.slice(0, spanishSegmentIndex)
+        : (lastSegment.endsWith(".html") ? pathSegments.slice(0, -1) : pathSegments);
+    const rootPrefix = rootSegments.length ? `/${rootSegments.join("/")}` : "";
+    const normalizedPage = currentPage;
 
     const buildLocalizedUrl = (lang) => {
         const page = normalizedPage === "index.html" ? "" : normalizedPage;
 
         if (lang === "es") {
-            return page ? `/es/${page}` : "/es/";
+            return page ? `${rootPrefix}/es/${page}` : `${rootPrefix}/es/`;
         }
 
-        return page ? `/${page}` : "/";
+        return page ? `${rootPrefix}/${page}` : `${rootPrefix || "/"}`;
     };
 
     languageButtons.forEach((button) => {
