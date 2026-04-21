@@ -1,18 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://christian-freelance.us/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://christian-freelance.us/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://christian-freelance.us/es/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://christian-freelance.us/" />
+  </url>
+  <url>
+    <loc>https://christian-freelance.us/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://christian-freelance.us/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://christian-freelance.us/es/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://christian-freelance.us/" />
   </url>
   <url>
     <loc>https://christian-freelance.us/servicios-ia.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://christian-freelance.us/servicios-ia.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://christian-freelance.us/es/servicios-ia.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://christian-freelance.us/servicios-ia.html" />
+  </url>
+  <url>
+    <loc>https://christian-freelance.us/es/servicios-ia.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://christian-freelance.us/servicios-ia.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://christian-freelance.us/es/servicios-ia.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://christian-freelance.us/servicios-ia.html" />
   </url>
   <url>
     <loc>https://christian-freelance.us/desarrollo-web.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://christian-freelance.us/desarrollo-web.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://christian-freelance.us/es/desarrollo-web.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://christian-freelance.us/desarrollo-web.html" />
+  </url>
+  <url>
+    <loc>https://christian-freelance.us/es/desarrollo-web.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://christian-freelance.us/desarrollo-web.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://christian-freelance.us/es/desarrollo-web.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://christian-freelance.us/desarrollo-web.html" />
   </url>
   <url>
     <loc>https://christian-freelance.us/aplicaciones-crm.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://christian-freelance.us/aplicaciones-crm.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://christian-freelance.us/es/aplicaciones-crm.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://christian-freelance.us/aplicaciones-crm.html" />
+  </url>
+  <url>
+    <loc>https://christian-freelance.us/es/aplicaciones-crm.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://christian-freelance.us/aplicaciones-crm.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://christian-freelance.us/es/aplicaciones-crm.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://christian-freelance.us/aplicaciones-crm.html" />
   </url>
   <url>
     <loc>https://christian-freelance.us/contacto.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://christian-freelance.us/contacto.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://christian-freelance.us/es/contacto.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://christian-freelance.us/contacto.html" />
+  </url>
+  <url>
+    <loc>https://christian-freelance.us/es/contacto.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://christian-freelance.us/contacto.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://christian-freelance.us/es/contacto.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://christian-freelance.us/contacto.html" />
   </url>
 </urlset>
