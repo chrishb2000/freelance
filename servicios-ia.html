@@ -1,158 +1,220 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Services - Christian Freelance</title>
-    <meta name="description" content="Workflow automation and AI integration with CRMs, billing and email to power your business.">
-
+    <title data-en="AI Services for Companies and Professionals | Christian Freelance" data-es="Servicios de IA para Empresas y Autónomos | Christian Freelance">AI Services for Companies and Professionals | Christian Freelance</title>
+    <meta name="description" content="AI workflow automation, tool integration and custom API development for companies that want to save time and scale better." data-en-content="AI workflow automation, tool integration and custom API development for companies that want to save time and scale better." data-es-content="Automatización de procesos, integración de herramientas y desarrollo de APIs con IA para empresas, pymes y autónomos que quieren ahorrar tiempo y escalar mejor.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://christian-freelance.us/servicios-ia.html">
+    <link rel="alternate" hreflang="en" href="https://christian-freelance.us/servicios-ia.html">
+    <link rel="alternate" hreflang="es" href="https://christian-freelance.us/servicios-ia.html">
+    <link rel="alternate" hreflang="x-default" href="https://christian-freelance.us/servicios-ia.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="AI Services for Companies and Professionals | Christian Freelance" data-en-content="AI Services for Companies and Professionals | Christian Freelance" data-es-content="Servicios de IA para Empresas y Autónomos | Christian Freelance">
+    <meta property="og:description" content="Implementation of AI automations, business integrations and secure APIs to improve business processes." data-en-content="Implementation of AI automations, business integrations and secure APIs to improve business processes." data-es-content="Implementación de automatizaciones con IA, integraciones empresariales y APIs seguras para mejorar procesos de negocio.">
+    <meta property="og:url" content="https://christian-freelance.us/servicios-ia.html">
+    <meta property="og:image" content="https://christian-freelance.us/images/ai-workflow-automation.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://christian-freelance.us/images/ai-workflow-automation.jpg">
+    <meta name="theme-color" content="#0f172a">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome CDN -->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
-
     <link rel="stylesheet" href="css/style.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Servicios de automatización con IA",
+      "provider": {
+        "@type": "ProfessionalService",
+        "name": "Christian Freelance",
+        "url": "https://christian-freelance.us/"
+      },
+      "url": "https://christian-freelance.us/servicios-ia.html",
+      "description": "Automatización de flujos de trabajo, integración de herramientas de gestión y desarrollo de APIs a medida con inteligencia artificial.",
+      "serviceType": "Automatización con IA"
+    }
+    </script>
 </head>
 <body>
-
     <header class="site-header">
-        <div class="container">
+        <div class="container header-shell">
             <div class="logo">
                 <a href="index.html">Christian Freelance</a>
             </div>
-            <nav class="main-nav" id="main-nav">
+            <nav class="main-nav" id="main-nav" aria-label="Main navigation" data-en-aria-label="Main navigation" data-es-aria-label="Navegación principal">
                 <ul>
-                    <li><a href="servicios-ia.html" data-i18n="nav_ia">Servicios de IA</a></li>
-                    <li><a href="desarrollo-web.html" data-i18n="nav_web">Desarrollo Web</a></li>
-                    <li><a href="aplicaciones-crm.html" data-i18n="nav_crm">Aplicaciones CRMs</a></li>
-                    <li><a href="contacto.html" data-i18n="nav_contact">Contacto</a></li>
+                    <li><a href="index.html" data-en="Home" data-es="Inicio">Home</a></li>
+                    <li><a href="servicios-ia.html" data-en="AI Services" data-es="Servicios de IA">AI Services</a></li>
+                    <li><a href="desarrollo-web.html" data-en="Web Development" data-es="Desarrollo Web">Web Development</a></li>
+                    <li><a href="aplicaciones-crm.html" data-en="Custom CRM" data-es="CRM a Medida">Custom CRM</a></li>
+                    <li><a href="contacto.html" data-en="Contact" data-es="Contacto">Contact</a></li>
                     <li class="language-switcher">
-                        <button type="button" data-lang="es" class="active">ES</button>
-                        <button type="button" data-lang="en">EN</button>
+                        <button type="button" class="lang-btn active" data-lang="en" aria-label="Switch to English">EN</button>
+                        <button type="button" class="lang-btn" data-lang="es" aria-label="Cambiar a español">ES</button>
                     </li>
                 </ul>
             </nav>
-            <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú">
-                <i class="fas fa-bars"></i>
+            <button id="menu-toggle" class="menu-toggle" aria-label="Open menu" data-en-aria-label="Open menu" data-es-aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
+                <i class="fas fa-bars" aria-hidden="true"></i>
             </button>
         </div>
     </header>
 
     <main>
-        <section id="servicio-ia" class="section-padding">
+        <section class="page-hero">
+            <div class="container page-hero-shell reveal">
+                <span class="eyebrow" data-en="Artificial intelligence automation" data-es="Automatización con inteligencia artificial">Artificial intelligence automation</span>
+                <h1 data-en="AI services focused on saving time and multiplying operational capacity" data-es="Servicios de IA orientados a ahorrar tiempo y multiplicar capacidad operativa">AI services focused on saving time and multiplying operational capacity</h1>
+                <p data-en="I integrate artificial intelligence into your processes to automate repetitive tasks, connect tools and create faster, more consistent and scalable systems." data-es="Integro inteligencia artificial en tus procesos para automatizar tareas repetitivas, conectar herramientas y crear sistemas más rápidos, consistentes y escalables.">I integrate artificial intelligence into your processes to automate repetitive tasks, connect tools and create faster, more consistent and scalable systems.</p>
+            </div>
+        </section>
+
+        <section class="section-padding">
+            <div class="container service-content">
+                <article class="service-item reveal">
+                    <div class="service-text">
+                        <span class="eyebrow">Flujos inteligentes</span>
+                        <h2>Automatización de flujos de trabajo</h2>
+                        <p>Analizo tu operativa diaria para detectar tareas repetitivas, cuellos de botella y acciones manuales que pueden delegarse en sistemas asistidos por IA.</p>
+                        <ul class="check-list">
+                            <li>Clasificación automática de correos, leads y solicitudes</li>
+                            <li>Generación asistida de respuestas, resúmenes e informes</li>
+                            <li>Procesos internos más rápidos y con menos errores humanos</li>
+                        </ul>
+                    </div>
+                    <div class="service-image">
+                        <img src="images/ai-workflow-automation.jpg" alt="Automatización de flujos de trabajo con inteligencia artificial en entorno empresarial" loading="lazy" decoding="async">
+                    </div>
+                </article>
+
+                <article class="service-item reverse reveal">
+                    <div class="service-text">
+                        <span class="eyebrow">Integración real</span>
+                        <h2>Conexión entre CRM, facturación, email y herramientas de gestión</h2>
+                        <p>La IA tiene más valor cuando trabaja con los sistemas que ya usas. Diseño integraciones que permiten compartir datos, activar acciones y mantener un flujo continuo entre herramientas.</p>
+                        <ul class="check-list">
+                            <li>Seguimiento comercial más consistente</li>
+                            <li>Procesos administrativos más ágiles</li>
+                            <li>Mejor trazabilidad de clientes, presupuestos y tareas</li>
+                        </ul>
+                    </div>
+                    <div class="service-image">
+                        <img src="images/ai-business-integration.jpg" alt="Integración de CRM, facturación y comunicaciones con inteligencia artificial" loading="lazy" decoding="async">
+                    </div>
+                </article>
+
+                <article class="service-item reveal">
+                    <div class="service-text">
+                        <span class="eyebrow">Base sólida</span>
+                        <h2>Desarrollo de APIs a medida</h2>
+                        <p>Si necesitas que dos o más sistemas se comuniquen de forma segura y estable, desarrollo APIs pensadas para soportar automatizaciones más potentes y procesos empresariales bien conectados.</p>
+                        <ul class="check-list">
+                            <li>Sincronización de datos entre aplicaciones</li>
+                            <li>Arquitectura preparada para crecer</li>
+                            <li>Mayor control sobre procesos críticos del negocio</li>
+                        </ul>
+                    </div>
+                    <div class="service-image">
+                        <img src="images/custom-api-development.jpg" alt="Desarrollo de APIs seguras para conectar aplicaciones empresariales" loading="lazy" decoding="async">
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-padding bg-panel">
             <div class="container">
-                <h1 class="section-title" data-i18n="ia_title">Servicios de Inteligencia Artificial</h1>
-                <p class="section-intro text-center" data-i18n="ia_intro">Integro soluciones de IA para automatizar tus procesos, reducir costes y liberar tu tiempo para que te centres en lo que de verdad importa: hacer crecer tu negocio.</p><br><br>
-
-                <div class="service-content">
-                    <div class="service-item">
-                        <div class="service-text">
-                            <h2 data-i18n="ia_workflow_title">Automatización de Flujos de Trabajo</h2>
-                            <p data-i18n="ia_workflow_desc">Analizo las tareas repetitivas de tu día a día y desarrollo sistemas inteligentes que las ejecutan de forma automática. Desde la clasificación de correos electrónicos y la gestión de agendas hasta la generación de informes, la IA puede trabajar por ti 24/7.</p>
-                        </div>
-                        <div class="service-image">
-                            <div class="image-placeholder" title="Espacio para imagen sobre flujos de trabajo automatizados."><img src="images/flujo.svg" alt=""></div>
-                        </div>
-                    </div>
-
-                    <div class="service-item reverse">
-                        <div class="service-text">
-                            <h2 data-i18n="ia_integration_title">Integración con Herramientas de Gestión</h2>
-                            <p data-i18n="ia_integration_desc">El verdadero poder de la IA reside en su capacidad para conectarse con los programas que ya utilizas. Realizo integraciones a medida con:</p>
-                            <ul>
-                                <li data-i18n="ia_crm"><strong>CRMs:</strong> Enriquece tus perfiles de cliente con datos predictivos y automatiza el seguimiento de ventas.</li>
-                                <li data-i18n="ia_billing"><strong>Software de Facturación:</strong> Automatiza la creación de facturas, el seguimiento de pagos y detecta patrones de gasto.</li>
-                                <li data-i18n="ia_email"><strong>Plataformas de Email:</strong> Crea respuestas automáticas inteligentes y personalizadas para tus clientes.</li>
-                            </ul>
-                        </div>
-                        <div class="service-image">
-                            <div class="image-placeholder" title="Espacio para imagen sobre integración de sistemas."><img src="images/gestion-empresa.svg" alt=""></div>
-                        </div>
-                    </div>
-
-                    <div class="service-item">
-                        <div class="service-text">
-                            <h2 data-i18n="ia_api_title">Desarrollo de APIs a Medida</h2>
-                            <p data-i18n="ia_api_desc">Si necesitas que dos o más aplicaciones se comuniquen entre sí, construyo APIs (Interfaces de Programación de Aplicaciones) robustas y seguras. Esto permite que tus herramientas compartan datos y funcionen como un único sistema cohesionado, abriendo la puerta a automatizaciones mucho más potentes.</p>
-                        </div>
-                        <div class="service-image">
-                            <div class="image-placeholder" title="Espacio para imagen sobre desarrollo de APIs."><img src="images/api.svg" alt=""></div>
-                        </div>
-                    </div>
+                <div class="section-heading reveal">
+                    <span class="eyebrow">Beneficios directos</span>
+                    <h2 class="section-title">Qué puedes conseguir al integrar IA de forma práctica</h2>
+                </div>
+                <div class="feature-grid">
+                    <article class="feature-card reveal">
+                        <h3>Menos carga manual</h3>
+                        <p>El equipo dedica menos tiempo a repetir tareas y más a vender, atender o tomar decisiones.</p>
+                    </article>
+                    <article class="feature-card reveal">
+                        <h3>Mejor respuesta al cliente</h3>
+                        <p>Los tiempos de reacción bajan y la información importante se mueve más rápido entre sistemas.</p>
+                    </article>
+                    <article class="feature-card reveal">
+                        <h3>Escalabilidad</h3>
+                        <p>Los procesos crecen contigo sin multiplicar el trabajo administrativo.</p>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <section id="call-to-action" class="section-padding bg-accent">
-            <div class="container text-center">
-                <h2 data-i18n="ia_cta_title">¿Quieres optimizar tu empresa con IA?</h2>
-                <p data-i18n="ia_cta_desc">Descubre cómo la inteligencia artificial puede transformar tu negocio.</p>
-                <br>
-                <a href="contacto.html" class="btn btn-light" data-i18n="ia_cta_btn">Solicita una Consultoría</a>
+        <section class="section-padding cta-section">
+            <div class="container cta-shell reveal">
+                <div>
+                    <span class="eyebrow" data-en="Initial consulting" data-es="Consultoría inicial">Initial consulting</span>
+                    <h2 data-en="If you think your business is losing time on repetitive tasks, it is worth reviewing" data-es="Si sospechas que tu empresa pierde tiempo en tareas repetitivas, conviene revisarlo">If you think your business is losing time on repetitive tasks, it is worth reviewing</h2>
+                    <p data-en="Tell me which tools you use and I will show you where AI automation can add the most value." data-es="Cuéntame qué herramientas usas y te diré dónde puede aportar más valor una automatización con IA.">Tell me which tools you use and I will show you where AI automation can add the most value.</p>
+                </div>
+                <div class="cta-actions">
+                    <a href="contacto.html" class="btn btn-primary" data-en="I want to automate processes" data-es="Quiero automatizar procesos">I want to automate processes</a>
+                </div>
             </div>
         </section>
     </main>
 
     <footer class="site-footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h3 data-i18n="footer_nav">Navegación</h3>
-                    <ul>
-                        <li><a href="servicios-ia.html" data-i18n="nav_ia">Servicios de IA</a></li>
-                        <li><a href="desarrollo-web.html" data-i18n="nav_web">Desarrollo Web</a></li>
-                        <li><a href="aplicaciones-crm.html" data-i18n="nav_crm">Aplicaciones CRMs</a></li>
-                        <li><a href="contacto.html" data-i18n="nav_contact">Contacto</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h3 data-i18n="footer_legal">Información Legal</h3>
-                    <ul>
-                        <li><a href="politica-privacidad.html" data-i18n="footer_privacy">Política de privacidad</a></li>
-                        <li><a href="politica-cookies.html" data-i18n="footer_cookies">Política de cookies</a></li>
-                        <li><a href="index.html" data-i18n="footer_about">Quiénes somos</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h3 data-i18n="footer_contact">Contacto</h3>
-                    <p>Email: <a href="mailto:chrishb2000@gmail.com">chrishb2000@gmail.com</a></p>
-                    <p data-i18n="footer_phone_label">Móvil:</p> <a href="tel:+34635983475">+34 635 98 34 75</a>
-                </div>
-                <div class="footer-col">
-                    <h3 data-i18n="footer_social">Redes Sociales</h3>
-                    <div class="social-icons">
-                        <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    </div>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3>Servicios</h3>
+                <ul>
+                    <li><a href="servicios-ia.html">Servicios de IA</a></li>
+                    <li><a href="desarrollo-web.html">Desarrollo Web</a></li>
+                    <li><a href="aplicaciones-crm.html">CRM a Medida</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <p><a href="mailto:chrishb2000@gmail.com">chrishb2000@gmail.com</a></p>
+                <p><a href="tel:+34635983475">+34 635 98 34 75</a></p>
+            </div>
+            <div class="footer-col">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="politica-privacidad.html">Política de privacidad</a></li>
+                    <li><a href="politica-cookies.html">Política de cookies</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Acceso rápido</h3>
+                <div class="footer-actions">
+                    <a href="https://wa.me/34635983475" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                    <a href="mailto:chrishb2000@gmail.com" aria-label="Enviar correo"><i class="fas fa-envelope" aria-hidden="true"></i></a>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p data-i18n="footer_rights">&copy; 2026 Christian Freelance. Todos los derechos reservados.</p>
-            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p data-en="© 2026 Christian Freelance. All rights reserved." data-es="© 2026 Christian Freelance. Todos los derechos reservados.">© 2026 Christian Freelance. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Cookie Consent Modal -->
-    <div id="cookie-consent-modal" class="cookie-modal">
+    <div id="cookie-consent-modal" class="cookie-modal" role="dialog" aria-live="polite" aria-label="Cookie notice" data-en-aria-label="Cookie notice" data-es-aria-label="Aviso de cookies">
         <div class="cookie-content">
-            <p data-i18n="cookie_text">Este sitio web utiliza cookies para mejorar la experiencia del usuario. <a href="politica-cookies.html">Leer más</a>.</p>
+            <p data-en="This site uses basic technical cookies to improve the browsing experience. Read the <a href=&quot;politica-cookies.html&quot;>cookie policy</a>." data-es="Este sitio utiliza cookies técnicas básicas para mejorar la experiencia de navegación. Consulta la <a href=&quot;politica-cookies.html&quot;>política de cookies</a>." data-html="true">This site uses basic technical cookies to improve the browsing experience. Read the <a href="politica-cookies.html">cookie policy</a>.</p>
             <div class="cookie-buttons">
-                <button id="cookie-accept-btn" class="btn btn-small" data-i18n="cookie_accept">Aceptar</button>
-                <button id="cookie-decline-btn" class="btn btn-small btn-secondary" data-i18n="cookie_decline">Rechazar</button>
+                <button id="cookie-accept-btn" class="btn btn-primary btn-small" type="button" data-en="Accept" data-es="Aceptar">Accept</button>
+                <button id="cookie-decline-btn" class="btn btn-secondary btn-small" type="button" data-en="Close" data-es="Cerrar">Close</button>
             </div>
         </div>
     </div>
 
-    <!-- Floating Buttons -->
-    <a href="https://wa.me/34635983475" class="whatsapp-btn" target="_blank" title="Contactar por WhatsApp">
-        <i class="fab fa-whatsapp"></i>
+    <a href="https://wa.me/34635983475" class="whatsapp-btn" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
     </a>
-    <a href="#" id="scrollTopBtn" class="scroll-top-btn" title="Volver arriba">
-        <i class="fas fa-arrow-up"></i>
-    </a>
+    <button id="scrollTopBtn" class="scroll-top-btn" type="button" aria-label="Volver arriba">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
 
     <script src="js/main.js"></script>
 </body>

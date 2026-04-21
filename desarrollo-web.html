@@ -1,160 +1,220 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Development - Christian Freelance</title>
-    <meta name="description" content="Creation of websites, online stores, digital magazines and custom development for WordPress and PrestaShop.">
-
+    <title data-en="Custom Web Development and Online Stores | Christian Freelance" data-es="Desarrollo Web a Medida y Tiendas Online | Christian Freelance">Custom Web Development and Online Stores | Christian Freelance</title>
+    <meta name="description" content="Websites, online stores and digital experiences optimized for SEO, performance and conversion." data-en-content="Websites, online stores and digital experiences optimized for SEO, performance and conversion." data-es-content="Diseño y desarrollo páginas web, tiendas online y experiencias digitales optimizadas para SEO, rendimiento y conversión.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://christian-freelance.us/desarrollo-web.html">
+    <link rel="alternate" hreflang="en" href="https://christian-freelance.us/desarrollo-web.html">
+    <link rel="alternate" hreflang="es" href="https://christian-freelance.us/desarrollo-web.html">
+    <link rel="alternate" hreflang="x-default" href="https://christian-freelance.us/desarrollo-web.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Desarrollo Web a Medida y Tiendas Online | Christian Freelance">
+    <meta property="og:description" content="Webs corporativas, ecommerce y desarrollos personalizados orientados a posicionamiento, confianza y ventas.">
+    <meta property="og:url" content="https://christian-freelance.us/desarrollo-web.html">
+    <meta property="og:image" content="https://christian-freelance.us/images/custom-web-development.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://christian-freelance.us/images/custom-web-development.jpg">
+    <meta name="theme-color" content="#0f172a">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome CDN -->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
-
     <link rel="stylesheet" href="css/style.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Desarrollo web a medida",
+      "provider": {
+        "@type": "ProfessionalService",
+        "name": "Christian Freelance",
+        "url": "https://christian-freelance.us/"
+      },
+      "url": "https://christian-freelance.us/desarrollo-web.html",
+      "description": "Diseño y desarrollo de páginas web corporativas, tiendas online y experiencias digitales optimizadas para SEO, rendimiento y conversión.",
+      "serviceType": "Desarrollo web"
+    }
+    </script>
 </head>
 <body>
-
     <header class="site-header">
-        <div class="container">
+        <div class="container header-shell">
             <div class="logo">
                 <a href="index.html">Christian Freelance</a>
             </div>
-            <nav class="main-nav" id="main-nav">
+            <nav class="main-nav" id="main-nav" aria-label="Main navigation" data-en-aria-label="Main navigation" data-es-aria-label="Navegación principal">
                 <ul>
-                    <li><a href="servicios-ia.html" data-i18n="nav_ia">Servicios de IA</a></li>
-                    <li><a href="desarrollo-web.html" data-i18n="nav_web">Desarrollo Web</a></li>
-                    <li><a href="aplicaciones-crm.html" data-i18n="nav_crm">Aplicaciones CRMs</a></li>
-                    <li><a href="contacto.html" data-i18n="nav_contact">Contacto</a></li>
+                    <li><a href="index.html" data-en="Home" data-es="Inicio">Home</a></li>
+                    <li><a href="servicios-ia.html" data-en="AI Services" data-es="Servicios de IA">AI Services</a></li>
+                    <li><a href="desarrollo-web.html" data-en="Web Development" data-es="Desarrollo Web">Web Development</a></li>
+                    <li><a href="aplicaciones-crm.html" data-en="Custom CRM" data-es="CRM a Medida">Custom CRM</a></li>
+                    <li><a href="contacto.html" data-en="Contact" data-es="Contacto">Contact</a></li>
                     <li class="language-switcher">
-                        <button type="button" data-lang="es" class="active">ES</button>
-                        <button type="button" data-lang="en">EN</button>
+                        <button type="button" class="lang-btn active" data-lang="en" aria-label="Switch to English">EN</button>
+                        <button type="button" class="lang-btn" data-lang="es" aria-label="Cambiar a español">ES</button>
                     </li>
                 </ul>
             </nav>
-            <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú">
-                <i class="fas fa-bars"></i>
+            <button id="menu-toggle" class="menu-toggle" aria-label="Open menu" data-en-aria-label="Open menu" data-es-aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
+                <i class="fas fa-bars" aria-hidden="true"></i>
             </button>
         </div>
     </header>
 
     <main>
-        <section id="servicio-web" class="section-padding">
+        <section class="page-hero">
+            <div class="container page-hero-shell reveal">
+                <span class="eyebrow" data-en="Business-driven design and development" data-es="Diseño y desarrollo orientado a negocio">Business-driven design and development</span>
+                <h1 data-en="Corporate websites, ecommerce and digital experiences that build trust and rank better" data-es="Webs corporativas, ecommerce y experiencias digitales que generan confianza y posicionan mejor">Corporate websites, ecommerce and digital experiences that build trust and rank better</h1>
+                <p data-en="I build websites and online stores designed to attract quality traffic, communicate clearly and convert visitors into customers." data-es="Desarrollo páginas web y tiendas online pensadas para atraer visitas de calidad, comunicar con claridad y convertir usuarios en clientes.">I build websites and online stores designed to attract quality traffic, communicate clearly and convert visitors into customers.</p>
+            </div>
+        </section>
+
+        <section class="section-padding">
+            <div class="container service-content">
+                <article class="service-item reveal">
+                    <div class="service-text">
+                        <span class="eyebrow">Presencia digital sólida</span>
+                        <h2>Páginas web y tiendas online a medida</h2>
+                        <p>Diseño webs corporativas, catálogos y ecommerce con una estructura clara, tiempos de carga razonables y llamadas a la acción bien resueltas.</p>
+                        <ul class="check-list">
+                            <li>Arquitectura pensada para SEO y usabilidad</li>
+                            <li>Diseño adaptable a móvil, tablet y escritorio</li>
+                            <li>Experiencia enfocada en confianza y conversión</li>
+                        </ul>
+                    </div>
+                    <div class="service-image">
+                        <img src="images/custom-web-development.jpg" alt="Desarrollo web a medida con vistas responsive en escritorio y móvil" loading="lazy" decoding="async">
+                    </div>
+                </article>
+
+                <article class="service-item reverse reveal">
+                    <div class="service-text">
+                        <span class="eyebrow">Personalización real</span>
+                        <h2>WordPress, PrestaShop y funcionalidades a medida</h2>
+                        <p>Si trabajas con WordPress o PrestaShop, puedo desarrollar módulos, configuraciones y piezas personalizadas para que la plataforma se adapte de verdad a tu proyecto.</p>
+                        <ul class="check-list">
+                            <li>Integraciones con pagos, envíos o herramientas externas</li>
+                            <li>Configuradores de producto y áreas privadas</li>
+                            <li>Mejoras de rendimiento, seguridad y experiencia de compra</li>
+                        </ul>
+                    </div>
+                    <div class="service-image">
+                        <img src="images/wordpress-prestashop-customization.jpg" alt="Personalización de tienda online y funcionalidades ecommerce a medida" loading="lazy" decoding="async">
+                    </div>
+                </article>
+
+                <article class="service-item reveal">
+                    <div class="service-text">
+                        <span class="eyebrow">Contenidos inmersivos</span>
+                        <h2>Revistas digitales, catálogos interactivos y experiencias visuales</h2>
+                        <p>Transformo publicaciones estáticas en piezas digitales más atractivas, con navegación cuidada y una presentación visual que invita a explorar más contenido.</p>
+                        <ul class="check-list">
+                            <li>Formatos visuales más actuales y memorables</li>
+                            <li>Experiencias pensadas para cualquier dispositivo</li>
+                            <li>Mayor tiempo de permanencia y mejor percepción de marca</li>
+                        </ul>
+                    </div>
+                    <div class="service-image">
+                        <img src="images/interactive-digital-magazine.jpg" alt="Revista digital interactiva mostrada en tablet y monitor" loading="lazy" decoding="async">
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-padding bg-panel">
             <div class="container">
-                <h1 class="section-title" data-i18n="web_title">Desarrollo Web a Medida</h1>
-                <p class="section-intro text-center" data-i18n="web_intro">Construyo tu presencia en internet con soluciones robustas, atractivas y fáciles de gestionar, adaptadas a tus objetivos comerciales.</p>
-                <br>
-                <br>
-                <div class="service-content">
-                    <div class="service-item">
-                        <div class="service-text">
-                            <h2 data-i18n="web_pages_title">Páginas Web y Tiendas Online</h2>
-                            <p data-i18n="web_pages_desc">Desde una web corporativa para presentar tu marca hasta una tienda online completa para vender tus productos. Desarrollo plataformas visualmente impactantes, rápidas y seguras, optimizadas para convertir visitantes en clientes.</p>
-                        </div>
-                        <div class="service-image">
-                            <div class="image-placeholder" title="Espacio para imagen sobre diseño de páginas web."><img src="images/website.svg" alt=""></div>
-                        </div>
-                    </div>
-
-                    <div class="service-item reverse">
-                        <div class="service-text">
-                            <h2 data-i18n="web_wp_title">Personalización de WordPress y PrestaShop</h2>
-                            <p data-i18n="web_wp_desc">Voy más allá de las plantillas. Como experto en WordPress y PrestaShop, desarrollo módulos y plugins a medida para añadir funcionalidades únicas que tu proyecto necesita. Si puedes imaginarlo, puedo programarlo:</p>
-                            <ul>
-                                <li data-i18n="web_wp_li1">Integración con sistemas de pago y envío específicos.</li>
-                                <li data-i18n="web_wp_li2">Configuradores de productos personalizados.</li>
-                                <li data-i18n="web_wp_li3">Áreas de cliente con funcionalidades avanzadas.</li>
-                                <li data-i18n="web_wp_li4">Optimización de rendimiento y seguridad.</li>
-                            </ul>
-                        </div>
-                        <div class="service-image">
-                            <div class="image-placeholder" title="Espacio para logos de WordPress y PrestaShop."><img src="images/tienda.svg" alt=""></div>
-                        </div>
-                    </div>
-
-                    <div class="service-item">
-                        <div class="service-text">
-                            <h2 data-i18n="web_blog_title">Revistas Digitales Interactivas</h2>
-                            <p data-i18n="web_blog_desc">Transformo publicaciones estáticas en experiencias digitales inmersivas. Desarrollo revistas digitales y catálogos interactivos que capturan la atención del lector con animaciones, vídeos y contenido dinámico, perfectamente visibles en cualquier dispositivo.</p>
-                        </div>
-                        <div class="service-image">
-                            <div class="image-placeholder" title="Espacio para imagen de una revista digital en una tablet."><img src="images/blog.svg" alt=""></div>
-                        </div>
-                    </div>
+                <div class="section-heading reveal">
+                    <span class="eyebrow">Qué cuido en cada proyecto web</span>
+                    <h2 class="section-title">No solo diseño páginas: construyo una base digital más competitiva</h2>
+                </div>
+                <div class="feature-grid">
+                    <article class="feature-card reveal">
+                        <h3>SEO on-page</h3>
+                        <p>Estructura semántica, jerarquía de contenidos, metadatos y enlazado interno mejor planteados.</p>
+                    </article>
+                    <article class="feature-card reveal">
+                        <h3>Rendimiento</h3>
+                        <p>Optimización de recursos, carga visual más eficiente y una experiencia móvil más cuidada.</p>
+                    </article>
+                    <article class="feature-card reveal">
+                        <h3>Conversión</h3>
+                        <p>Mensajes más claros, CTAs visibles y una navegación que ayuda al usuario a decidir.</p>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <section id="call-to-action" class="section-padding bg-accent">
-            <div class="container text-center">
-                <h2 data-i18n="web_cta_title">¿Necesitas una web que marque la diferencia?</h2>
-                <p data-i18n="web_cta_desc">Construyamos juntos tu proyecto online.</p>
-                <br>
-                <a href="contacto.html" class="btn btn-light" data-i18n="web_cta_btn">Cuéntame tu idea</a>
+        <section class="section-padding cta-section">
+            <div class="container cta-shell reveal">
+                <div>
+                    <span class="eyebrow" data-en="Your website can perform better" data-es="Tu web puede rendir mejor">Your website can perform better</span>
+                    <h2 data-en="If your site does not explain what you do well or help you win clients, it deserves a review" data-es="Si tu página no transmite bien lo que haces o no te ayuda a captar clientes, merece una revisión">If your site does not explain what you do well or help you win clients, it deserves a review</h2>
+                    <p data-en="I can help you improve design, structure, content, SEO and the overall experience." data-es="Puedo ayudarte a mejorar diseño, estructura, contenidos, SEO y experiencia general.">I can help you improve design, structure, content, SEO and the overall experience.</p>
+                </div>
+                <div class="cta-actions">
+                    <a href="contacto.html" class="btn btn-primary" data-en="I want to improve my website" data-es="Quiero mejorar mi web">I want to improve my website</a>
+                </div>
             </div>
         </section>
     </main>
 
     <footer class="site-footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h3 data-i18n="footer_nav">Navegación</h3>
-                    <ul>
-                        <li><a href="servicios-ia.html" data-i18n="nav_ia">Servicios de IA</a></li>
-                        <li><a href="desarrollo-web.html" data-i18n="nav_web">Desarrollo Web</a></li>
-                        <li><a href="aplicaciones-crm.html" data-i18n="nav_crm">Aplicaciones CRMs</a></li>
-                        <li><a href="contacto.html" data-i18n="nav_contact">Contacto</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h3 data-i18n="footer_legal">Información Legal</h3>
-                    <ul>
-                        <li><a href="politica-privacidad.html" data-i18n="footer_privacy">Política de privacidad</a></li>
-                        <li><a href="politica-cookies.html" data-i18n="footer_cookies">Política de cookies</a></li>
-                        <li><a href="index.html" data-i18n="footer_about">Quiénes somos</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h3 data-i18n="footer_contact">Contacto</h3>
-                    <p>Email: <a href="mailto:chrishb2000@gmail.com">chrishb2000@gmail.com</a></p>
-                    <p data-i18n="footer_phone_label">Móvil:</p> <a href="tel:+34635983475">+34 635 98 34 75</a>
-                </div>
-                <div class="footer-col">
-                    <h3 data-i18n="footer_social">Redes Sociales</h3>
-                    <div class="social-icons">
-                        <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    </div>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3>Servicios</h3>
+                <ul>
+                    <li><a href="servicios-ia.html">Servicios de IA</a></li>
+                    <li><a href="desarrollo-web.html">Desarrollo Web</a></li>
+                    <li><a href="aplicaciones-crm.html">CRM a Medida</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <p><a href="mailto:chrishb2000@gmail.com">chrishb2000@gmail.com</a></p>
+                <p><a href="tel:+34635983475">+34 635 98 34 75</a></p>
+            </div>
+            <div class="footer-col">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="politica-privacidad.html">Política de privacidad</a></li>
+                    <li><a href="politica-cookies.html">Política de cookies</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Acceso rápido</h3>
+                <div class="footer-actions">
+                    <a href="https://wa.me/34635983475" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                    <a href="mailto:chrishb2000@gmail.com" aria-label="Enviar correo"><i class="fas fa-envelope" aria-hidden="true"></i></a>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p data-i18n="footer_rights">&copy; 2026 Christian Freelance. Todos los derechos reservados.</p>
-            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p data-en="© 2026 Christian Freelance. All rights reserved." data-es="© 2026 Christian Freelance. Todos los derechos reservados.">© 2026 Christian Freelance. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Cookie Consent Modal -->
-    <div id="cookie-consent-modal" class="cookie-modal">
+    <div id="cookie-consent-modal" class="cookie-modal" role="dialog" aria-live="polite" aria-label="Cookie notice" data-en-aria-label="Cookie notice" data-es-aria-label="Aviso de cookies">
         <div class="cookie-content">
-            <p data-i18n="cookie_text">Este sitio web utiliza cookies para mejorar la experiencia del usuario. <a href="politica-cookies.html">Leer más</a>.</p>
+            <p data-en="This site uses basic technical cookies to improve the browsing experience. Read the <a href=&quot;politica-cookies.html&quot;>cookie policy</a>." data-es="Este sitio utiliza cookies técnicas básicas para mejorar la experiencia de navegación. Consulta la <a href=&quot;politica-cookies.html&quot;>política de cookies</a>." data-html="true">This site uses basic technical cookies to improve the browsing experience. Read the <a href="politica-cookies.html">cookie policy</a>.</p>
             <div class="cookie-buttons">
-                <button id="cookie-accept-btn" class="btn btn-small" data-i18n="cookie_accept">Aceptar</button>
-                <button id="cookie-decline-btn" class="btn btn-small btn-secondary" data-i18n="cookie_decline">Rechazar</button>
+                <button id="cookie-accept-btn" class="btn btn-primary btn-small" type="button" data-en="Accept" data-es="Aceptar">Accept</button>
+                <button id="cookie-decline-btn" class="btn btn-secondary btn-small" type="button" data-en="Close" data-es="Cerrar">Close</button>
             </div>
         </div>
     </div>
 
-    <!-- Floating Buttons -->
-    <a href="https://wa.me/34635983475" class="whatsapp-btn" target="_blank" title="Contactar por WhatsApp">
-        <i class="fab fa-whatsapp"></i>
+    <a href="https://wa.me/34635983475" class="whatsapp-btn" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
     </a>
-    <a href="#" id="scrollTopBtn" class="scroll-top-btn" title="Volver arriba">
-        <i class="fas fa-arrow-up"></i>
-    </a>
+    <button id="scrollTopBtn" class="scroll-top-btn" type="button" aria-label="Volver arriba">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
 
     <script src="js/main.js"></script>
 </body>
