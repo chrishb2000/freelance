@@ -74,6 +74,10 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+    document.querySelectorAll("[data-html=\"true\"]").forEach((element) => {
+        element.innerHTML = element.textContent;
+    });
+
     const revealItems = document.querySelectorAll(".reveal");
     if ("IntersectionObserver" in window) {
         const observer = new IntersectionObserver((entries) => {
