@@ -138,6 +138,10 @@ textarea {
     align-items: center;
 }
 
+.logo-accent {
+    color: #000080;
+}
+
 .main-nav ul {
     display: flex;
     align-items: center;
@@ -200,6 +204,18 @@ textarea {
 .hero-section {
     padding: 7.5rem 0 4.5rem;
     min-height: 88vh;
+}
+
+.hero-section::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    height: clamp(72px, 11vw, 128px);
+    background: linear-gradient(180deg, rgba(244, 239, 231, 0) 0%, rgba(244, 239, 231, 0.92) 72%, rgba(244, 239, 231, 1) 100%);
+    pointer-events: none;
+    z-index: 2;
 }
 
 .page-hero {
@@ -552,6 +568,7 @@ textarea {
 .slider-track {
     position: relative;
     min-height: 66vh;
+    height: 100%;
 }
 
 .hero-background-slider .slider-track,
@@ -564,31 +581,43 @@ textarea {
     position: absolute;
     inset: 0;
     opacity: 0;
-    transition: opacity 0.7s ease;
+    pointer-events: none;
+    transition: opacity 2.8s ease-in-out;
+    z-index: 0;
+    will-change: opacity;
 }
 
 .slider-slide.active {
-    position: relative;
     opacity: 1;
+    z-index: 1;
 }
 
 .slider-media {
     width: 100%;
+    height: 100%;
     min-height: 66vh;
     object-fit: cover;
+    object-position: center center;
     border-radius: 0;
+    transform: scale(1.02);
     filter: saturate(0.76) contrast(0.9) brightness(0.72) blur(0.1px);
+    transition: transform 8.6s ease-out, filter 2.8s ease-in-out;
+    backface-visibility: hidden;
 }
 
 .hero-background-slider .slider-media {
     filter: saturate(0.74) contrast(0.9) brightness(0.62) blur(0.35px);
 }
 
+.slider-slide.active .slider-media {
+    transform: scale(1.08);
+}
+
 .hero-slider-overlay {
     position: absolute;
     inset: 0;
     background:
-        linear-gradient(180deg, rgba(8, 14, 28, 0.28), rgba(8, 14, 28, 0.6)),
+        linear-gradient(180deg, rgba(8, 14, 28, 0.22) 0%, rgba(8, 14, 28, 0.48) 52%, rgba(244, 239, 231, 0.18) 88%, rgba(244, 239, 231, 0.52) 100%),
         linear-gradient(90deg, rgba(8, 14, 28, 0.62), rgba(8, 14, 28, 0.18) 58%, rgba(8, 14, 28, 0.42));
     z-index: 1;
 }
@@ -667,6 +696,17 @@ textarea {
 .slider-dot.active {
     background: #fff;
     transform: scale(1.15);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .slider-slide,
+    .slider-media {
+        transition: none;
+    }
+
+    .slider-slide.active .slider-media {
+        transform: none;
+    }
 }
 
 .process-step {
