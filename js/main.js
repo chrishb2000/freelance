@@ -152,43 +152,74 @@ document.addEventListener("DOMContentLoaded", () => {
     const dotsContainer = document.getElementById("home-slider-dots");
     let activeSlide = 0;
     let sliderTimer = null;
+    let isTransitioning = false;
 
     const showSlide = (index) => {
-        slides.forEach((slide, slideIndex) => {
-            slide.classList.toggle("active", slideIndex === index);
-        });
+        if (!slides.length || index === activeSlide || isTransitioning) {
+            return;
+        }
+
+        const previousSlide = slides[activeSlide];
+        const nextSlide = slides[index];
+        isTransitioning = true;
+
+        if (previousSlide) {
+            previousSlide.style.zIndex = "1";
+        }
+
+        if (nextSlide) {
+            nextSlide.style.zIndex = "2";
+            nextSlide.classList.add("active");
+        }
 
         if (dotsContainer) {
             dotsContainer.querySelectorAll(".slider-dot").forEach((dot, dotIndex) => {
                 dot.classList.toggle("active", dotIndex === index);
             });
         }
+
+        window.setTimeout(() => {
+            if (previousSlide) {
+                previousSlide.classList.remove("active");
+                previousSlide.style.zIndex = "";
+            }
+
+            if (nextSlide) {
+                nextSlide.style.zIndex = "";
+            }
+
+            activeSlide = index;
+            isTransitioning = false;
+        }, 2800);
     };
 
     if (slides.length && dotsContainer) {
+        const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+        slides.forEach((slide, index) => {
+            slide.classList.toggle("active", index === 0);
+        });
+
         slides.forEach((_, index) => {
             const dot = document.createElement("button");
             dot.type = "button";
             dot.className = `slider-dot${index === 0 ? " active" : ""}`;
             dot.addEventListener("click", () => {
-                activeSlide = index;
-                showSlide(activeSlide);
+                showSlide(index);
                 resetSlider();
             });
             dotsContainer.appendChild(dot);
         });
 
         const nextSlide = () => {
-            activeSlide = (activeSlide + 1) % slides.length;
-            showSlide(activeSlide);
+            showSlide((activeSlide + 1) % slides.length);
         };
 
         const resetSlider = () => {
             window.clearInterval(sliderTimer);
-            sliderTimer = window.setInterval(nextSlide, 4600);
+            sliderTimer = window.setInterval(nextSlide, prefersReducedMotion ? 7000 : 9000);
         };
 
-        showSlide(activeSlide);
         resetSlider();
     }
 });
